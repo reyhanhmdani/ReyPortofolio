@@ -12,7 +12,7 @@ const ChatWidget = () => {
     
     // WARNING: Storing API keys in frontend code is generally unsafe for production.
     // Consider moving this to an environment variable or entirely to a backend proxy in the future.
-    const apiKey = "[ENCRYPTION_KEY]"; 
+    const apiKey = "[Gemini_API_Key]"; 
 
     const scrollToBottom = () => {
         messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
