@@ -9,10 +9,9 @@ const ChatWidget = () => {
     const [isTyping, setIsTyping] = useState(false);
     const messagesEndRef = useRef(null);
     const [chatHistory, setChatHistory] = useState([]);
-    
     // WARNING: Storing API keys in frontend code is generally unsafe for production.
     // Consider moving this to an environment variable or entirely to a backend proxy in the future.
-    const apiKey = "[Gemini_API_Key]"; 
+    const apiKey = import.meta.env.VITE_GEMINI_API_KEY;
 
     const scrollToBottom = () => {
         messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
