@@ -22,3 +22,7 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+sanity_check.js
+test_model.js
+test_model.cjs

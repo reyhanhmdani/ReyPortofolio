@@ -627,6 +627,8 @@ nav.scrolled {
 
 #contact .section-title {
     color: var(--bg-cream);
+    font-size: clamp(3rem, 5vw, 4.5rem);
+    letter-spacing: -0.02em;
 }
 
 #contact .section-title::after {
@@ -642,7 +644,8 @@ nav.scrolled {
 .contact-content p {
     color: #A8A29E;
     margin-bottom: 40px;
-    font-size: 1.1rem;
+    font-size: 1.25rem;
+    line-height: 1.7;
 }
 
 /* ==========================================================================
@@ -956,13 +959,60 @@ nav.scrolled {
 }
 
 footer {
-    background-color: #171514;
+    background-color: #0D0C0B;
     color: var(--taupe-accent);
-    padding: 32px 0;
-    text-align: center;
+    padding: 60px 0 40px;
     font-family: var(--font-mono);
     font-size: 0.875rem;
     transition: background-color 0.5s ease;
+    border-top: 1px solid rgba(255,255,255,0.05);
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 32px;
+}
+
+.footer-left {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.footer-brand {
+    font-family: var(--font-display);
+    font-size: 2rem;
+    font-weight: 700;
+    color: #FAFAF9; /* Tetap cream di Dark Mode */
+    letter-spacing: -0.05em;
+}
+
+.footer-copyright {
+    color: var(--taupe-accent);
+    line-height: 1.6;
+    margin: 0;
+}
+
+.footer-socials {
+    display: flex;
+    gap: 16px;
+}
+
+.footer-socials .social-icon {
+    width: 44px;
+    height: 44px;
+    background: transparent;
+    border: 1px solid rgba(255,255,255,0.15);
+    color: var(--taupe-accent);
+}
+
+.footer-socials .social-icon:hover {
+    background: #FAFAF9; /* Tetap cream di Dark Mode */
+    color: #171514;
+    border-color: #FAFAF9;
 }
 
 /* ==========================================================================
@@ -1351,7 +1401,7 @@ footer {
 }
 [data-theme="light"] .marquee-group i, [data-theme="light"] .marquee-group svg.custom-svg-icon {
     color: var(--stone-dark);
-    opacity: 0.5;
+    opacity: 0.85;
 }
 [data-theme="light"] .marquee-group i:hover, [data-theme="light"] .marquee-group svg.custom-svg-icon:hover {
     opacity: 1;
@@ -1364,7 +1414,7 @@ footer {
     }
     [data-theme="system"] .marquee-group i, [data-theme="system"] .marquee-group svg.custom-svg-icon {
         color: var(--stone-dark);
-        opacity: 0.5;
+        opacity: 0.85;
     }
     [data-theme="system"] .marquee-group i:hover, [data-theme="system"] .marquee-group svg.custom-svg-icon:hover {
         opacity: 1;
@@ -1391,7 +1441,7 @@ footer {
     .hero-title { font-size: 2.2rem; margin-bottom: 8px; }
     .hero-subtitle { margin-bottom: 16px; font-size: 0.95rem; }
     .social-links { margin-top: 16px; }
-    .code-body { font-size: 0.75rem; padding: 16px; }
+    .code-body { font-size: 0.65rem; padding: 12px; }
     .btn { padding: 10px 20px; font-size: 0.9rem; }
     
     .experience-item {
@@ -1412,6 +1462,15 @@ footer {
     .editorial-visual { width: 100%; }
     .editorial-desc { max-width: 100%; font-size: 1.05rem; }
     .editorial-title { font-size: 2.2rem; }
+    
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 24px;
+    }
+    .footer-left {
+        align-items: center;
+    }
     
     .mobile-toggle { display: block; }
     .nav-links {

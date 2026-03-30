@@ -52,7 +52,7 @@ const ChatWidget = () => {
     };
 
     const fetchGeminiResponse = async (userText, currentHistory = [], retries = 5) => {
-        const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-09-2025:generateContent?key=${apiKey}`;
+        const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${apiKey}`;
         
         const systemPrompt = "You are the AI assistant for Raihan Hamdani, a Senior Creative Developer and AI Specialist. Your goal is to represent him professionally and answer questions from recruiters or clients. His skills include PHP, Laravel, JS, React, AI Engineering, Docker, Go, and Performance Ads. He has marketing experience managing ads for products like 'Detcha' and 'Arinna'. He also worked as a Software Engineer and Data Analyst at 'Ayobuatbaik' and 'DKM Masjid Salam Selfa', and previously interned at 'B_erl Cosmetics'. His projects include 'Ayobuatbaik.com', 'Andreraditya.guru', and 'Selfa.sch.id'. His contact is hello@raihanhamdani.dev. Keep answers concise, friendly, and highly professional. Reply in the language the user speaks.";
         
