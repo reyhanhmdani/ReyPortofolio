@@ -44,7 +44,7 @@ const Contact = () => {
                 <h2 className="section-title" style={{ justifyContent: 'center', marginBottom: '24px' }}>Get In Touch</h2>
                 <div className="contact-content">
                     <p>Whether you have a question, a strategic proposition, or just want to say hi, my inbox is always open. I'll try my best to get back to you.</p>
-                    <a href="mailto:hello@raihanhamdani.dev" className="btn btn-primary" style={{ fontSize: '1.1rem' }} data-text="Say Hello" onClick={createRipple} onMouseMove={handleBtnMouseMove} onMouseLeave={handleBtnMouseLeave} onMouseEnter={handleBtnMouseEnter}>
+                    <a href="https://wa.me/6285761285875?text=Hi%20Rey" target="_blank" rel="noopener noreferrer" className="btn btn-primary" style={{ fontSize: '1.1rem' }} data-text="Say Hello" onClick={createRipple} onMouseMove={handleBtnMouseMove} onMouseLeave={handleBtnMouseLeave} onMouseEnter={handleBtnMouseEnter}>
                         <span className="btn-text">Say Hello</span>
                     </a>
                 </div>
